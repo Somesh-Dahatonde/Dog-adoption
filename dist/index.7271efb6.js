@@ -1007,9 +1007,9 @@ $parcel$ReactRefreshHelpers$f00f.prelude(module);
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _reactDom = require("react-dom");
-var _pet = require("./Pet");
-var _petDefault = parcelHelpers.interopDefault(_pet);
+var _reactDom = require("react-dom"); // import Pet from "./Pet";
+var _searchParams = require("./SearchParams");
+var _searchParamsDefault = parcelHelpers.interopDefault(_searchParams);
 const App = ()=>{
     return /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
         children: [
@@ -1017,47 +1017,25 @@ const App = ()=>{
                 children: "Adopt Me!"
             }, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 6,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_petDefault.default, {
-                name: "Luna",
-                animal: "dog",
-                breed: "Havanese"
-            }, void 0, false, {
-                fileName: "src/App.js",
                 lineNumber: 7,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_petDefault.default, {
-                name: "Pepper",
-                animal: "bird",
-                breed: "Cockatiel"
-            }, void 0, false, {
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_searchParamsDefault.default, {}, void 0, false, {
                 fileName: "src/App.js",
                 lineNumber: 8,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_petDefault.default, {
-                name: "Doink",
-                animal: "cat",
-                breed: "Mix"
-            }, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 9,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/App.js",
-        lineNumber: 5,
+        lineNumber: 6,
         columnNumber: 10
     }, undefined);
 };
 _c = App;
 _reactDom.render(/*#__PURE__*/ _jsxDevRuntime.jsxDEV(App, {}, void 0, false, {
     fileName: "src/App.js",
-    lineNumber: 13,
+    lineNumber: 12,
     columnNumber: 8
 }, undefined), document.getElementById("root"));
 var _c;
@@ -1068,7 +1046,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-dom":"j6uA9","./Pet":"98zmG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react-dom":"j6uA9","./SearchParams":"gR5jP","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
 'use strict';
 module.exports = require('./cjs/react-jsx-dev-runtime.development.js');
 
@@ -22675,58 +22653,73 @@ module.exports = require('./cjs/scheduler-tracing.development.js');
     exports.unstable_wrap = unstable_wrap;
 })();
 
-},{}],"98zmG":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$acd4 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{}],"gR5jP":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$ff62 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$acd4.prelude(module);
+$parcel$ReactRefreshHelpers$ff62.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const Pet = (props)=>{
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+const SearchParams = ()=>{
+    const location = "Seattle, WA";
     return /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-        children: [
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h1", {
-                children: props.name
-            }, void 0, false, {
-                fileName: "src/Pet.js",
-                lineNumber: 3,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h2", {
-                children: props.animal
-            }, void 0, false, {
-                fileName: "src/Pet.js",
-                lineNumber: 4,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h2", {
-                children: props.breed
-            }, void 0, false, {
-                fileName: "src/Pet.js",
-                lineNumber: 5,
-                columnNumber: 9
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/Pet.js",
-        lineNumber: 2,
+        className: "search-params",
+        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("form", {
+            children: [
+                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("label", {
+                    htmlFor: "location",
+                    children: [
+                        "Location",
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("input", {
+                            id: "location",
+                            value: location,
+                            placeholder: "Location"
+                        }, void 0, false, {
+                            fileName: "src/SearchParams.js",
+                            lineNumber: 9,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/SearchParams.js",
+                    lineNumber: 7,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
+                    children: "Submit"
+                }, void 0, false, {
+                    fileName: "src/SearchParams.js",
+                    lineNumber: 11,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/SearchParams.js",
+            lineNumber: 6,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/SearchParams.js",
+        lineNumber: 5,
         columnNumber: 10
     }, undefined);
 };
-_c = Pet;
-exports.default = Pet;
+_c = SearchParams;
+exports.default = SearchParams;
 var _c;
-$RefreshReg$(_c, "Pet");
+$RefreshReg$(_c, "SearchParams");
 
-  $parcel$ReactRefreshHelpers$acd4.postlude(module);
+  $parcel$ReactRefreshHelpers$ff62.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gkKU3":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
